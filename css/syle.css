@@ -8,6 +8,7 @@
 
 body {
     font-family: sans-serif;
+    color: #3c3a3a;
 }
 
 /* UTILITIES */
@@ -52,6 +53,12 @@ body {
 .main-content div,
 .main-content h1 {
     margin-bottom: 1rem;
+}
+
+.main-content div span {
+    border-radius: 5px;
+    padding: 3px;
+    background: #fff;
 }
 
 .main-content button {
