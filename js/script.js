@@ -11,10 +11,22 @@ TASKS
 
 //1
 var km = parseInt( prompt("How many km do you have to do?") );
+
+//Validation
+if ( isNaN(km) ) {
+    alert("Invalid format. The text must be a number. Please refresh page.");
+}
+
 //console.log(km);
 
 //2
 var age = parseInt( prompt("What's your age?") );
+
+//Validation
+if ( isNaN(age) ) {
+    alert("Invalid format. The text must be a number. Please refresh page.");
+}
+
 //console.log(age);
 
 //3
