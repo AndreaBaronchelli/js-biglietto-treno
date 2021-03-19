@@ -1,0 +1,69 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* UTILITIES */
+.underline {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+/* Main */
+.price-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../img/pexels-mark-plötz-2790396.jpg);
+}
+
+/* Layover */
+.price-app::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Main Content */
+.main-content {
+    z-index: 1;
+    width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.main-content div,
+.main-content h1 {
+    margin-bottom: 1rem;
+}
+
+.main-content button {
+    padding: 1rem 2rem;
+    border: 1px solid seagreen;
+    border-radius: 10px;
+    background: seagreen;
+    transition: font-size 0.3s, background 0.3s;
+}
+
+.main-content button:hover {
+    font-size: 16px;
+    cursor: pointer;
+    background: springgreen;
+}
